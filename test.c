@@ -12,6 +12,7 @@
 #include <debug/debug.h>
 
 
+#if 0
 static inline int serial_init(char *name)
 {
 	return Tserial_open_with_arg(name, 1, 9600, 8, 1, 'N', 'n');
@@ -57,4 +58,9 @@ int main(int argc, const char *argv[])
 		}
 	}
 }
-
+#endif
+int main(int argc, const char *argv[])
+{
+	Tprint_hex_dump("test:", "hello world", strlen("hello world"));
+	return 0;
+}
