@@ -21,7 +21,6 @@ static int serial_read(int fd)
 {
 	char buf[64];
 	int rc;
-	struct frame_645 *frame;
 	rc = read(fd, buf, sizeof(buf));
 	if (rc < 0)
 		printf("errno:%d\n", errno);
