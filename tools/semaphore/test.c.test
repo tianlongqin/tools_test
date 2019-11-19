@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <semaphore.h>
+
+int main(int argc, const char *argv[])
+{
+	int semid;
+
+	semid = Tsem_open("/", 'a');
+	if (semid < 0) {
+		printf("errno : %d\n", errno);
+		exit(1);
+	}
+
+	Tsem_lock(semid);
+	printf("hello world\n");
+	Tsem_unlock(semid);
+
+	return 0;
+}

@@ -1,0 +1,37 @@
+mainmenu "Configuration"
+
+config  DEBUG
+bool    "Debug tool, Be related to print debug"
+default  y
+
+config  FILE
+bool    "File tool, Be related to file"
+default  y
+
+config  SEMAPHORE
+bool    "Semaphore tool, Be related to system V sem function"
+default  y
+
+config	SHAREMEM
+bool    "Share memory tool, Be related to system V share memory function"
+default  y
+
+config  THREADPOOL
+bool    "Thread pool tool, Be related to thread pool"
+default  y
+
+config  SERIAL
+bool    "serial port tool, Be related to serial port"
+default  y
+
+config  TIMER
+bool    "time tool, Be related to time function"
+default  y
+
+config  SIGNAL
+bool    "signal tool, Be related to signal function"
+default  y
+
+config	MATCH
+bool    "match algo tool, Be related to match algo function"
+default  y
