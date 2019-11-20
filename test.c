@@ -62,5 +62,8 @@ int main(int argc, const char *argv[])
 int main(int argc, const char *argv[])
 {
 	Tprint_hex_dump("test:", "hello world", strlen("hello world"));
+	Tprint_debug("hello world\n");
+	Tprint_info_debug("hello world\n");
+	Tprint_err_debug("hello world\n");
 	return 0;
 }
